@@ -1,0 +1,7 @@
+@(id:Int)
+<div>
+    <button onclick="javascript:dir_add(@id)">add</button>
+    <button id="dir_add">rename</button>
+    <button id="dir_add2">move</button>
+    <button onclick="javascript:dir_del('${QUERY_STRING:5}')">del</button>
+</div>

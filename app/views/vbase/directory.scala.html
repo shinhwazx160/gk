@@ -1,0 +1,7 @@
+@(id: Int)
+
+@if(id != 0 ){
+    @for(i <- models.mbase.BaseDao.getDirectoryList(id)){
+        <a href="@i._2">@i._1</a><br>
+    }
+}

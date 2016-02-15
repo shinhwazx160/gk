@@ -1,0 +1,5 @@
+@(id:Int)
+
+@for(i <- models.mbase.BaseDao.getTree(id)){
+    <a href="@i">@models.mbase.BaseDao.getDirectoryName(i)</a>->
+}
